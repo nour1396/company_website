@@ -1,0 +1,5 @@
+$('#NavBar').load('../mainParts/navbar.html')
+$('#Footer').load('../mainParts/footer.html')
+$('#carouselHomePageHeader').load('../homePage/carouselHomePageHeader.html')
+$('#cardsHomePage').load('../homePage/cardsHomePage.html')
+$('#secondCarousel').load('../homePage/secondCarousel.html')

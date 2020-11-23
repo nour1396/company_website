@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto'!important;
+    box-sizing: border-box;
+    margin: 0%;
+    position: relative;
+}
+
+
+/* start navbar */
+
+#NavBar {
+    position: fixed;
+    top: 0;
+    left: -1%;
+    right: 10%;
+    padding: 0% 0% 0% 4%;
+    background-color: rgba(146, 143, 143, 0.7);
+    transform: skewX(-15deg);
+    z-index: 9999999999999999999;
+}
+
+#NavBar .navbar-brand img {
+    transform: skewX(15deg);
+}
+
+#NavBar #navbarList .nav-item {
+    padding: 3% 2%;
+    background: transparent;
+    transition: ease-in-out 0.5s background;
+}
+
+#NavBar #navbarList .nav-item .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.02rem;
+    transform: skewX(15deg);
+}
+
+#NavBar #navbarList {
+    height: 100% !important;
+    margin: 0;
+}
+
+#NavBar #navbarList .nav-item:hover {
+    background: #2b6cad;
+}
+
+#NavBar #navbarList .nav-item .dropdown-menu {
+    background-color: rgba(146, 143, 143, 0.7);
+    margin: 0%;
+    border-radius: 0;
+}
+
+#NavBar #navbarList .nav-item .dropdown-menu .dropdown-item {
+    transform: skewX(15deg);
+    color: #ffffff;
+}
+
+#NavBar #navbarList .nav-item .dropdown-menu .dropdown-item:hover {
+    background-color: transparent;
+    color: rgb(22, 135, 228);
+}
+
+
+/* end navbar */
+
+
+/* start carousel in home page */
+
+#carouselHomePageHeader .carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+#carouselHomePageHeader .carousel-item .carouselLayerImg {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    width: 100%;
+}
+
+#carouselHomePageHeader .carousel-item .carouselLayerImg .carouselLayerImgLayer {
+    transform: skewX(-30deg) translateX(-90%) translateY(50%);
+    background: #2b6cad;
+    position: relative;
+    height: 100vh;
+    left: 10%;
+    top: -50%;
+    z-index: 999;
+}
+
+#carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
+    transform: skewX(30deg);
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-35%, -55%);
+    width: 100%;
+    z-index: 9999;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.9rem;
+}
+
+#carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
+    transform: skewX(30deg);
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-25%, -45%);
+    width: 100%;
+    z-index: 9999;
+    color: #ffffff;
+    font-size: 1.9rem;
+    cursor: pointer;
+}
+
+
+/* end carousel in home page */
+
+
+/* start cards in home page */
+
+#cardsHomePage {
+    background: #254f7c;
+}
+
+#cardsHomePage .row .col-md-4 .card {
+    transform: translateY(-40%);
+    padding: 4%;
+    background: #1a3757;
+    color: #ffffff;
+    position: relative;
+    border-radius: 1px;
+    height: 100%;
+    z-index: 99999;
+}
+
+#cardsHomePage .row .col-md-4 p {
+    color: #dbdbdb;
+    font-weight: lighter;
+}
+
+#cardsHomePage .row .col-md-4 .card::before {
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 2px;
+    left: 10px;
+    background: linear-gradient(90deg, #8951f0, #d71f98);
+    content: "";
+}
+
+
+/* end cards in home page */
+
+
+/* start 2nd carousel home page */
+
+#secondCarousel .right-of-carousel {
+    transform: skewX(-15deg) translateX(-50%);
+    position: relative;
+    right: -50%;
+}
+
+
+/* end 2nd carousel home page */
