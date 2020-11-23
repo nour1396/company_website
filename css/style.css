@@ -1,3 +1,10 @@
+:root {
+    --lightBlue: #2b6cad;
+    --opicityWhite: #ffffffd0;
+    --white: #ffffff;
+    --darkBlue: #1a3757;
+}
+
 body {
     font-family: 'Roboto'!important;
     box-sizing: border-box;
@@ -11,29 +18,29 @@ body {
 #NavBar {
     position: fixed;
     top: 0;
-    left: -1%;
+    left: -5%;
     right: 10%;
-    padding: 0% 0% 0% 4%;
-    background-color: rgba(146, 143, 143, 0.7);
-    transform: skewX(-15deg);
+    padding: 0% 0% 0% 7%;
+    background-color: var(--opicityWhite);
+    transform: skewX(-30deg);
     z-index: 9999999999999999999;
 }
 
 #NavBar .navbar-brand img {
-    transform: skewX(15deg);
+    transform: skewX(30deg);
 }
 
 #NavBar #navbarList .nav-item {
     padding: 3% 2%;
     background: transparent;
-    transition: ease-in-out 0.5s background;
+    transition: ease-in-out 0.4s background;
 }
 
 #NavBar #navbarList .nav-item .nav-link {
-    color: #ffffff;
+    color: var(--lightBlue);
     font-weight: 500;
     font-size: 1.02rem;
-    transform: skewX(15deg);
+    transform: skewX(30deg);
 }
 
 #NavBar #navbarList {
@@ -42,23 +49,29 @@ body {
 }
 
 #NavBar #navbarList .nav-item:hover {
-    background: #2b6cad;
+    background: var(--lightBlue);
+    color: var(--white)
+}
+
+#NavBar #navbarList .nav-item:hover .nav-link {
+    color: var(--white)
 }
 
 #NavBar #navbarList .nav-item .dropdown-menu {
-    background-color: rgba(146, 143, 143, 0.7);
+    background-color: var(--opicityWhite);
     margin: 0%;
     border-radius: 0;
 }
 
 #NavBar #navbarList .nav-item .dropdown-menu .dropdown-item {
-    transform: skewX(15deg);
-    color: #ffffff;
+    transform: skewX(30deg);
+    color: var(--lightBlue);
 }
 
 #NavBar #navbarList .nav-item .dropdown-menu .dropdown-item:hover {
+    color: black;
     background-color: transparent;
-    color: rgb(22, 135, 228);
+    font-weight: 700;
 }
 
 
@@ -74,18 +87,18 @@ body {
 
 #carouselHomePageHeader .carousel-item .carouselLayerImg {
     position: absolute;
-    top: 42%;
     left: 50%;
-    transform: translate(-50%, -42%);
+    top: 52%;
+    transform: translate(-52%, -50%);
     width: 100%;
 }
 
 #carouselHomePageHeader .carousel-item .carouselLayerImg .carouselLayerImgLayer {
-    transform: skewX(-30deg) translateX(-90%) translateY(50%);
-    background: #2b6cad;
+    transform: skewX(-30deg) translate(-40%, 50%);
+    background: var(--lightBlue);
     position: relative;
     height: 100vh;
-    left: 10%;
+    left: -40%;
     top: -50%;
     z-index: 999;
 }
@@ -98,7 +111,7 @@ body {
     transform: translate(-35%, -55%);
     width: 100%;
     z-index: 9999;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 700;
     font-size: 2.9rem;
 }
@@ -111,7 +124,7 @@ body {
     transform: translate(-25%, -45%);
     width: 100%;
     z-index: 9999;
-    color: #ffffff;
+    color: var(--white);
     font-size: 1.9rem;
     cursor: pointer;
 }
@@ -129,8 +142,8 @@ body {
 #cardsHomePage .row .col-md-4 .card {
     transform: translateY(-40%);
     padding: 4%;
-    background: #1a3757;
-    color: #ffffff;
+    background: var(--darkBlue);
+    color: var(--white);
     position: relative;
     border-radius: 1px;
     height: 100%;
@@ -159,10 +172,149 @@ body {
 /* start 2nd carousel home page */
 
 #secondCarousel .right-of-carousel {
-    transform: skewX(-15deg) translateX(-50%);
-    position: relative;
-    right: -50%;
+    transform: skewX(-10deg) translateX(12%);
+}
+
+#secondCarousel .right-of-carousel div img {
+    height: 100%;
+}
+
+#secondCarousel .carousel-btns {
+    color: var(--lightBlue);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
 /* end 2nd carousel home page */
+
+
+/* start footer */
+
+#Footer {
+    background: var(--darkBlue);
+}
+
+
+/* end footer */
+
+
+/* start header in about page */
+
+#headerAboutPage {
+    background-image: url('../images/wxp (9).jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+#headerAboutPage .layer {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+#headerAboutPage .layer .carouselLayerImgLayer {
+    transform: skewX(-30deg) translate(-60%, -10%);
+    background: var(--lightBlue);
+    position: relative;
+    height: 100vh;
+    left: -40%;
+    top: 80%;
+    z-index: 999;
+}
+
+#headerAboutPage .layer .carouselLayerImgLayer div {
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    transform: skewX(30deg);
+    width: 100%;
+    color: var(--white);
+}
+
+#headerAboutPage .layer .carouselLayerImgLayer div h1 {
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+#headerAboutPage .layer .carouselLayerImgLayer div p {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+#missionVisionAboutPage {
+    background: var(--lightBlue);
+}
+
+
+/* end header in about page */
+
+@media (min-width: 601px) and(max-width: 968px) {
+    #NavBar {
+        left: -10%;
+        right: 15%;
+        padding: 0% 0% 0% 1%;
+        background-color: violet!important;
+    }
+    #NavBar .navbar-brand img {
+        padding: 0% 0% 0% 15%;
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
+        font-size: 1.4rem;
+        top: 69%;
+        left: -40%;
+        transform: translate(30%, -69%);
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg {
+        left: -3%;
+        top: 10%;
+        transform: translate(3%, -20%);
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
+        font-size: 0.7rem;
+        top: 55%;
+        left: 45%;
+        transform: translate(-25%, -45%);
+    }
+    #cardsHomePage .row .col-md-4 .card {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #NavBar {
+        left: -11%;
+        right: 15%;
+        padding: 0% 0% 0% 1%;
+    }
+    #NavBar .navbar-brand img {
+        padding: 0% 0% 0% 6%;
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
+        font-size: 1.3rem;
+        top: 60%;
+        left: -30%;
+        transform: translate(30%, -60%);
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg {
+        left: 2%;
+        top: 70%;
+        transform: translate(2%, -69%);
+    }
+    #carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
+        font-size: 0.7rem;
+        top: 55%;
+        left: 45%;
+        transform: translate(-25%, -55%);
+    }
+    #cardsHomePage .row .col-md-4 .card {
+        font-size: 0.8rem;
+        transform: translateY(-35%);
+    }
+    #secondCarousel .right-of-carousel {
+        transform: skewX(0) translateX(2%);
+        position: relative;
+    }
+}
