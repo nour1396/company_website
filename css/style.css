@@ -489,6 +489,9 @@ body {
         left: -98%;
         top: 80%;
     }
+    #ourCustomersCustomerPage p {
+        font-size: 0.8rem;
+    }
     #ourCustomersCustomerPage .container h2,
     #ourStoryAboutPage .container h2,
     #ourPartnersAboutPage .container h2 {
