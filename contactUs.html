@@ -31,57 +31,61 @@
 
     <section id="contactSectionContactPage" class="py-5">
         <div class="container py-5">
-            <div class="card shadow p-4">
+            <div class="card p-4">
                 <div class="row ">
-                    <div class="col-md-3">
-                        <div class="card shadow p-2 h-100">
-                            <ul class="list-group">
-                                <li class="list-group-item border-bottom-0">
-                                    <span class="text-capitalize font-weight-bolder d-block">email</span> info@rootssolutions.com
-                                </li>
-                                <li class="list-group-item border-bottom-0">
-                                    <span class="text-capitalize font-weight-bolder d-block">phone Nubmer</span>
-                                    <spa class="d-block py-1">035904903 - 01065620274</spa>
-                                    <a class="btn btn-success rounded-pill w-25 p-1" href="https://api.whatsapp.com/send/?phone=201065620274&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp "></i></a>
-                                </li>
 
-                                <li class="list-group-item">
-                                    <span class="text-capitalize font-weight-bolder d-block">address</span> 21 El-Gaish Rd, Abdel Moniem Gaber Building, Alexandria, Egypt
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card p-5">
+                    <div class="col-md-12 my-2">
+                        <div class="card shadow p-md-5 p-2">
                             <form action="" method="POST">
                                 <div class="form-row">
                                     <div class="form-group col-md-6">
-                                        <label class="text-capitalize d-inline" for="">name</label>
-                                        <input type="text" name="" id="" class="d-inline">
+                                        <input type="text" name="" id="" placeholder="name">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="text-capitalize d-inline" for="">email</label>
-                                        <input type="email" name="" id="" class="d-inline">
+                                        <input type="email" name="" id="" placeholder="email">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="text-capitalize d-inline" for="">phone no.</label>
-                                        <input type="text" name="" id="" class="d-inline">
+                                        <input type="text" name="" id="" placeholder="phone Number">
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <label class="text-capitalize d-inline" for="">company</label>
-                                        <input type="text" name="" id="" class="d-inline">
+                                        <input type="text" name="" id="" placeholder="company">
+                                    </div>
+                                    <div class="form-group col-md-12">
+                                        <textarea name="message" rows="3" placeholder="message" maxlength="150"></textarea>
                                     </div>
                                 </div>
+                                <div class="d-flex justify-content-end">
+                                    <button type="submit" class="btn rounded-pill text-capitalize">send message</button>
+                                </div>
                             </form>
+                        </div>
+                    </div>
+                    <div class="col-md-12 my-2">
+                        <div class="card shadow">
+                            <ul class="list-group d-flex flex-md-row">
+                                <li class="list-group-item border-0">
+                                    <span class="text-capitalize font-weight-bolder">email</span><small class="d-block py-1">info@rootssolutions.com</small>
+                                </li>
+
+
+                                <li class="list-group-item border-0">
+                                    <span class="text-capitalize font-weight-bolder">address</span><small class="d-block py-1">21 El-Gaish Rd, Abdel Moniem Gaber Building, Alexandria, Egypt</small>
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <span class="text-capitalize font-weight-bolder">phone Nubmer</span>
+                                    <small class="d-block py-1">+2035904903 / +201065620274 </small>
+
+                                </li>
+                                <li class="list-group-item border-0 ml-auto">
+                                    <a class="btn d-inline-block p-1" href="https://api.whatsapp.com/send/?phone=201065620274&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp-square text-success fa-2x"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
 
 
 

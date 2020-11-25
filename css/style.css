@@ -7,9 +7,12 @@
     --fintSizeSmaller: 1.3rem;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto'!important;
-    box-sizing: border-box;
     margin: 0%;
     position: relative;
 }
@@ -26,6 +29,11 @@ body {
     background-color: var(--opicityWhite);
     transform: skewX(-30deg);
     z-index: 9999999999999999999;
+}
+
+#NavBar i {
+    cursor: pointer;
+    color: var(--lightBlue);
 }
 
 #NavBar .navbar-brand img {
@@ -208,7 +216,7 @@ body {
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -367,62 +375,71 @@ body {
     font-weight: lighter;
 }
 
-@media (min-width: 601px) and(max-width: 968px) {
-    #NavBar {
-        left: -10%;
-        right: 15%;
-        padding: 0% 0% 0% 1%;
-        background-color: violet!important;
-    }
-    #NavBar .navbar-brand img {
-        padding: 0% 0% 0% 15%;
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
-        font-size: 1.4rem;
-        top: 69%;
-        left: -40%;
-        transform: translate(30%, -69%);
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg {
-        left: -3%;
-        top: 10%;
-        transform: translate(3%, -20%);
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
-        font-size: 0.7rem;
-        top: 55%;
-        left: 45%;
-        transform: translate(-25%, -45%);
-    }
-    #cardsHomePage .row .col-md-4 .card {
-        font-size: 0.8rem;
-    }
-    #headerContactPage .layer .carouselLayerImgLayer div h1,
-    #headerAboutPage .layer .carouselLayerImgLayer div h1,
-    #headerCustomerPage .layer .carouselLayerImgLayer div h1 {
-        font-size: 1.3rem;
-        top: 1%;
-        left: 4%;
-        transform: translate(-4%, -1%);
-    }
-    #headerAboutPage .layer .carouselLayerImgLayer div p,
-    #headerCustomerPage .layer .carouselLayerImgLayer div p,
-    #headerContactPage .layer .carouselLayerImgLayer div p {
-        font-size: 0.8rem;
-        top: 1%;
-        left: 4%;
-        transform: translate(-4%, -1%);
-    }
+#contactSectionContactPage {
+    background: linear-gradient(50deg, var(--darkBlue), var(--lightBlue));
 }
 
-@media only screen and (max-width: 600px) {
+#contactSectionContactPage .list-group span {
+    color: var(--lightBlue);
+    font-size: 14px;
+}
+
+#contactSectionContactPage input,
+#contactSectionContactPage textarea {
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: var(--lightBlue);
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+#contactSectionContactPage input::placeholder,
+#contactSectionContactPage textarea::placeholder {
+    font-weight: 400;
+    line-height: 26px;
+    color: #3076c5;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+#contactSectionContactPage input:focus,
+#contactSectionContactPage textarea:focus {
+    box-shadow: 0 0px 0px var(--darkBlue);
+    outline: 0 none;
+    background-color: #f0f1f3;
+    border-color: var(--lightBlue);
+    color: var(--darkBlue);
+}
+
+#contactSectionContactPage form div button {
+    background: linear-gradient(50deg, var(--darkBlue), var(--lightBlue));
+    color: var(--white);
+}
+
+
+/* end contact page */
+
+@media only screen and (max-width: 1000px) {
     #NavBar {
-        left: -11%;
-        right: 15%;
         padding: 0% 0% 0% 1%;
+        left: 0;
+        transform: skewX(0);
+        right: 0;
+    }
+    #NavBar i {
+        font-size: 1.1rem;
     }
     #NavBar .navbar-brand img {
-        padding: 0% 0% 0% 6%;
+        transform: skewX(0);
+    }
+    #NavBar #navbarList .nav-item .nav-link {
+        transform: skewX(0);
+    }
+    #NavBar #navbarList .nav-item .dropdown-menu .dropdown-item {
+        transform: skewX(0);
     }
     #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
         font-size: 1.3rem;
@@ -476,5 +493,15 @@ body {
     #ourStoryAboutPage .container h2,
     #ourPartnersAboutPage .container h2 {
         font-size: 1.9rem;
+    }
+    #contactSectionContactPage form div button {
+        font-size: 13px;
+    }
+    #contactSectionContactPage input,
+    #contactSectionContactPage textarea {
+        padding: 4px;
+    }
+    #Footer {
+        font-size: 0.7rem;
     }
 }
