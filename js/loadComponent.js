@@ -1,7 +1,7 @@
 $('#NavBar').load('../mainParts/navbar.html')
 $('#Footer').load('../mainParts/footer.html')
 $('#carouselHomePageHeader').load('../homePage/carouselHomePageHeader.html')
-$('#cardsHomePage').load('../homePage/cardsHomePage.html')
+    /* $('#cardsHomePage').load('../homePage/cardsHomePage.html') */
 $('#secondCarousel').load('../homePage/secondCarousel.html')
 $('#headerAboutPage').load('../aboutPage/headerAboutPage.html')
 $('#ourStoryAboutPage').load('../aboutPage/ourStoryAboutPage.html')

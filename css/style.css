@@ -3,7 +3,7 @@
     --opicityWhite: #ffffffd0;
     --white: #ffffff;
     --darkBlue: #1a3757;
-    --fontSizeBigger: 3.1rem;
+    --fontSizeBigger: 3.7rem;
     --fintSizeSmaller: 1.3rem;
 }
 
@@ -116,14 +116,15 @@ body {
 #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
     transform: skewX(30deg);
     position: absolute;
-    top: 65%;
-    left: 40%;
-    transform: translate(-35%, -55%);
+    top: 70%;
+    left: 45%;
+    transform: translate(-40%, -70%);
     width: 100%;
     z-index: 9999;
     color: var(--white);
-    font-weight: 700;
+    font-weight: 500;
     font-size: var(--fontSizeBigger);
+    text-transform: uppercase;
 }
 
 #carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
@@ -131,7 +132,7 @@ body {
     position: absolute;
     top: 55%;
     left: 45%;
-    transform: translate(-25%, -45%);
+    transform: translate(-25%, -55%);
     width: 100%;
     z-index: 9999;
     color: var(--white);
@@ -185,7 +186,7 @@ body {
     transform: skewX(-10deg) translateX(12%);
 }
 
-#secondCarousel .right-of-carousel div img {
+#secondCarousel .right-of-carousel img {
     height: 100%;
 }
 
