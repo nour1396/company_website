@@ -583,6 +583,9 @@ body {
     #contactSectionContactPage textarea {
         padding: 4px;
     }
+    #productProductsPage h2 img {
+        width: 42%;
+    }
     #Footer {
         font-size: 0.7rem;
     }
