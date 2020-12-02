@@ -13,3 +13,20 @@
         Location.href = '/about.html'
     })
 }, 300) */
+setTimeout(() => {
+
+    let btnReadMoreService = document.querySelector('#ourServices').querySelectorAll('.btnReadMoreService');
+    btnReadMoreService.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            console.log(e.target.offsetParent);
+            if (e.path[4].querySelector('span').classList[1] == 'd-none') {
+                window.scrollTo(e.path[4].top);
+                e.path[4].querySelector('span').classList.remove('d-none')
+            } else {
+                window.scrollTo(e.clientX, e.clientY);
+                e.path[4].querySelector('span').classList.add('d-none')
+            }
+        })
+    })
+
+}, 300)

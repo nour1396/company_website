@@ -1,9 +1,9 @@
 :root {
     --lightBlue: #2b6cad;
-    --opicityWhite: #ffffffd0;
+    --opicityWhite: #ffffffcc;
     --white: #ffffff;
     --darkBlue: #1a3757;
-    --fontSizeBigger: 3.7rem;
+    --fontSizeBigger: 2.9rem;
     --fintSizeSmaller: 1.3rem;
 }
 
@@ -17,18 +17,47 @@ body {
     position: relative;
 }
 
+.modal {
+    z-index: 999999999999 !important;
+}
+
 
 /* start navbar */
 
 #NavBar {
+    width: 100%;
+    position: relative;
+    padding: 0% !important;
+    margin-right: auto;
+}
+
+#NavBar .containerX {
     position: fixed;
     top: 0;
-    left: -5%;
-    right: 10%;
-    padding: 0% 0% 0% 7%;
+    left: 0%;
+    z-index: 9999999999999;
+    top: 0;
+    left: 0%;
+    margin: 0;
     background-color: var(--opicityWhite);
-    transform: skewX(-30deg);
-    z-index: 9999999999999999999;
+    width: 80%;
+}
+
+#NavBar .containerX::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -11px;
+    transform: translateX(25%);
+    width: 11%;
+    height: 100%;
+    background-color: var(--lightBlue);
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    z-index: -1;
 }
 
 #NavBar i {
@@ -36,21 +65,28 @@ body {
     color: var(--lightBlue);
 }
 
-#NavBar .navbar-brand img {
-    transform: skewX(30deg);
+#NavBar #navbarList {
+    height: 100%;
 }
 
 #NavBar #navbarList .nav-item {
-    padding: 3% 2%;
+    height: 100%;
     background: transparent;
     transition: ease-in-out 0.4s background;
+    transform: skewX(-10deg);
+}
+
+#NavBar #navbarList .nav-item:active {
+    background: var(--lightBlue);
 }
 
 #NavBar #navbarList .nav-item .nav-link {
     color: var(--lightBlue);
     font-weight: 500;
     font-size: 1.02rem;
-    transform: skewX(30deg);
+    height: 100%;
+    transform: skewX(10deg);
+    padding: 40px 20px !important;
 }
 
 #NavBar #navbarList {
@@ -67,21 +103,9 @@ body {
     color: var(--white)
 }
 
-#NavBar #navbarList .nav-item .dropdown-menu {
-    background-color: var(--opicityWhite);
-    margin: 0%;
-    border-radius: 0;
-}
-
-#NavBar #navbarList .nav-item .dropdown-menu .dropdown-item {
-    transform: skewX(30deg);
-    color: var(--lightBlue);
-}
-
-#NavBar #navbarList .nav-item .dropdown-menu .dropdown-item:hover {
-    color: black;
-    background-color: transparent;
-    font-weight: 700;
+#NavBar #navbarList #contactBtnNav {
+    background-color: var(--lightBlue) !important;
+    color: #ffffff !important;
 }
 
 
@@ -90,55 +114,129 @@ body {
 
 /* start carousel in home page */
 
-#carouselHomePageHeader .carousel-item {
-    position: relative;
-    overflow: hidden;
-}
-
-#carouselHomePageHeader .carousel-item .carouselLayerImg {
-    position: absolute;
-    left: 50%;
-    top: 52%;
-    transform: translate(-52%, -50%);
-    width: 100%;
-}
-
-#carouselHomePageHeader .carousel-item .carouselLayerImg .carouselLayerImgLayer {
-    transform: skewX(-30deg) translate(-40%, 50%);
-    background: var(--lightBlue);
-    position: relative;
+#carouselHomePageHeader1 {
+    background-image: url('../images/plc and scada bg.jpg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 100vh;
-    left: -40%;
-    top: -50%;
-    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.726);
 }
 
-#carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
-    transform: skewX(30deg);
-    position: absolute;
-    top: 70%;
-    left: 45%;
-    transform: translate(-40%, -70%);
+#carouselHomePageHeader2 {
+    background-image: url('../images/classic control.jpeg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader3 {
+    background-image: url('../images/dcs system.jpg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader4 {
+    background-image: url('../images/electrical panel supply & install.png');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader5 {
+    background-image: url('../images/panel buildings.jpeg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader6 {
+    background-image: url('../images/energy monitirung.png');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader7 {
+    background-image: url('../images/technical consulting.jpeg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.733);
+}
+
+#carouselHomePageHeader8 {
+    background-image: url('../images/vision inspection.jpeg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader9 {
+    background-image: url('../images/trainingCourses.jpg');
+    /*  background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+#carouselHomePageHeader .carousel-inner .carousel-item .layer {
     width: 100%;
-    z-index: 9999;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+}
+
+#carouselHomePageHeader .carousel-inner .layer .carouselItems {
+    position: relative;
+    left: 5%;
+    top: 70%;
+    transform: translate(-5%, -70%);
     color: var(--white);
     font-weight: 500;
     font-size: var(--fontSizeBigger);
-    text-transform: uppercase;
+    padding: 0% 6%;
 }
 
-#carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
-    transform: skewX(30deg);
-    position: absolute;
-    top: 55%;
-    left: 45%;
-    transform: translate(-25%, -55%);
-    width: 100%;
-    z-index: 9999;
-    color: var(--white);
-    font-size: 1.9rem;
-    cursor: pointer;
+#carouselHomePageHeader .carousel-inner .carouselItems h1 {
+    padding: 2% 0%;
 }
+
+
+/* 
+#carouselHomePageHeader .carousel-inner .layer .carouselItems::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5%;
+    left: -2%;
+    transform: translateX(2%, -5%);
+    background-color: var(--lightBlue);
+    -webkit-transform: skew(-35deg);
+    -moz-transform: skew(-35deg);
+    -o-transform: skew(-35deg);
+    transform: skew(-35deg);
+    z-index: -2;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 501px 501px 0 0;
+    border-color: #2b6cad transparent transparent transparent;
+} */
 
 
 /* end carousel in home page */
@@ -162,7 +260,7 @@ body {
 }
 
 #cardsHomePage .row .col-md-4 p {
-    color: #dbdbdb;
+    color: #828288;
     font-weight: lighter;
 }
 
@@ -180,20 +278,34 @@ body {
 /* end cards in home page */
 
 
-/* start 2nd carousel home page */
+/* start 2nd carousel about page */
 
-#secondCarousel .right-of-carousel {
-    transform: skewX(-10deg) translateX(12%);
+#industries {
+    overflow: hidden;
 }
 
-#secondCarousel .right-of-carousel img {
-    height: 100%;
+#industries .right-of-carousel {
+    padding: 0% !important;
 }
 
-#secondCarousel .carousel-btns {
+#industries .right-of-carousel img {
+    transform: skewX(-4deg);
+}
+
+#industries .carousel-btns {
     color: var(--lightBlue);
     font-weight: bold;
     cursor: pointer;
+}
+
+#industries .left-of-carousel ul li {
+    color: #424242;
+    font-size: 1.2rem;
+}
+
+#industries .left-of-carousel h2 {
+    font-weight: 700;
+    /*     border-bottom: 1px solid darkblue; */
 }
 
 
@@ -216,8 +328,8 @@ body {
     background-image: url('../images/co..jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 70%;
-    height: 60vh;
+    background-size: 100% 90%;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -275,163 +387,14 @@ body {
 /* end header in about page */
 
 
-/* start customer page */
-
-#headerCustomerPage {
-    background-image: url('../images/customersLogo.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 70%;
-    height: 60vh;
-    overflow: hidden;
-}
-
-#headerCustomerPage .layer {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.342);
-}
-
-#headerCustomerPage .layer .carouselLayerImgLayer {
-    transform: skewX(-15deg) translate(-50%, -9%);
-    background: var(--lightBlue);
-    position: relative;
-    height: 100vh;
-    left: -40%;
-    top: 70%;
-    z-index: 999;
-}
-
-#headerCustomerPage .layer .carouselLayerImgLayer div {
-    position: absolute;
-    left: 93%;
-    top: 4%;
-    transform: skewX(15deg);
-    width: 100%;
-    color: var(--white);
-}
-
-#headerCustomerPage .layer .carouselLayerImgLayer div h2 {
-    font-weight: 800;
-    font-size: var(--fontSizeBigger);
-}
-
-#headerCustomerPage .layer .carouselLayerImgLayer div p {
-    font-size: 1.1rem;
-    color: #dbdbdb;
-    font-weight: lighter;
-}
-
-#ourCustomersCustomerPage p {
-    font-size: 1.3rem;
-    color: #4b4949;
-}
-
-
-/* end customer page */
-
-
-/* start contact page */
-
-#headerContactPage {
-    background-image: url('../images/contactSection.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: 100% 70%;
-    height: 60vh;
-    overflow: hidden;
-}
-
-#headerContactPage .layer {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.342);
-}
-
-#headerContactPage .layer .carouselLayerImgLayer {
-    transform: skewX(-15deg) translate(-50%, -9%);
-    background: var(--lightBlue);
-    position: relative;
-    height: 100vh;
-    left: -40%;
-    top: 70%;
-    z-index: 999;
-}
-
-#headerContactPage .layer .carouselLayerImgLayer div {
-    position: absolute;
-    left: 93%;
-    top: 4%;
-    transform: skewX(15deg);
-    width: 100%;
-    color: var(--white);
-}
-
-#headerContactPage .layer .carouselLayerImgLayer div h2 {
-    font-weight: 800;
-    font-size: var(--fontSizeBigger);
-}
-
-#headerContactPage .layer .carouselLayerImgLayer div p {
-    font-size: 1.1rem;
-    color: #dbdbdb;
-    font-weight: lighter;
-}
-
-#contactSectionContactPage {
-    background: linear-gradient(50deg, var(--darkBlue), var(--lightBlue));
-}
-
-#contactSectionContactPage .list-group span {
-    color: var(--lightBlue);
-    font-size: 14px;
-}
-
-#contactSectionContactPage input,
-#contactSectionContactPage textarea {
-    padding: 10px;
-    background-color: transparent;
-    border: 0;
-    border-bottom: 2px solid;
-    border-color: var(--lightBlue);
-    outline: none;
-    border-radius: 0;
-    width: 100%;
-}
-
-#contactSectionContactPage input::placeholder,
-#contactSectionContactPage textarea::placeholder {
-    font-weight: 400;
-    line-height: 26px;
-    color: #3076c5;
-    background-color: transparent;
-    text-transform: capitalize;
-}
-
-#contactSectionContactPage input:focus,
-#contactSectionContactPage textarea:focus {
-    box-shadow: 0 0px 0px var(--darkBlue);
-    outline: 0 none;
-    background-color: #f0f1f3;
-    border-color: var(--lightBlue);
-    color: var(--darkBlue);
-}
-
-#contactSectionContactPage form div button {
-    background: linear-gradient(50deg, var(--darkBlue), var(--lightBlue));
-    color: var(--white);
-}
-
-
-/* end contact page */
-
-
 /* start products page */
 
 #headerProductPage {
     background-image: url('../images/productsPage.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 100% 70%;
-    height: 60vh;
+    background-size: 100% 90%;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -495,44 +458,291 @@ body {
     transform: scale(1.9);
 }
 
+#productProductsPage .modal-dialog {
+    max-width: 100% !important;
+}
+
+#productProductsPage .modal-content {
+    border: none !important;
+}
+
 
 /* end product page */
 
+
+/* start service page */
+
+#headerServicesPage {
+    background-image: url('../images/servicePage.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+#headerServicesPage .layer {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+#headerServicesPage .layer .carouselLayerImgLayer {
+    transform: skewX(-15deg) translate(-50%, -9%);
+    background: var(--lightBlue);
+    position: relative;
+    height: 100vh;
+    left: -40%;
+    top: 70%;
+    z-index: 999;
+}
+
+#headerServicesPage .layer .carouselLayerImgLayer div {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    transform: skewX(15deg);
+    width: 100%;
+    color: var(--white);
+}
+
+#headerServicesPage .layer .carouselLayerImgLayer div h2 {
+    font-weight: 800;
+    font-size: var(--fontSizeBigger);
+}
+
+#headerServicesPage .layer .carouselLayerImgLayer div p {
+    font-size: 1.1rem;
+    color: #acacac;
+    font-weight: lighter;
+}
+
+#ourServices .plcSection h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: var(--fontSizeBigger);
+}
+
+
+/* #ourServices .plcSection {
+    font-size: 1.1rem;
+    color: #888888;
+    font-weight: lighter;
+}
+ */
+
+
+/* end service page */
+
+
+/* start customer page */
+
+#headerCustomerPage {
+    background-image: url('../images/customersLogo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#headerCustomerPage .layer {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+#headerCustomerPage .layer .carouselLayerImgLayer {
+    transform: skewX(-15deg) translate(-50%, -9%);
+    background: var(--lightBlue);
+    position: relative;
+    height: 100vh;
+    left: -40%;
+    top: 70%;
+    z-index: 999;
+}
+
+#headerCustomerPage .layer .carouselLayerImgLayer div {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    transform: skewX(15deg);
+    width: 100%;
+    color: var(--white);
+}
+
+#headerCustomerPage .layer .carouselLayerImgLayer div h2 {
+    font-weight: 800;
+    font-size: var(--fontSizeBigger);
+}
+
+#headerCustomerPage .layer .carouselLayerImgLayer div p {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: lighter;
+}
+
+#ourCustomersCustomerPage p {
+    font-size: 1.3rem;
+    color: #4b4949;
+}
+
+
+/* end customer page */
+
+
+/* start contact page */
+
+#headerContactPage {
+    background-image: url('../images/contactSection.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#headerContactPage .layer {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+#headerContactPage .layer .carouselLayerImgLayer {
+    transform: skewX(-15deg) translate(-50%, -9%);
+    background: var(--lightBlue);
+    position: relative;
+    height: 100vh;
+    left: -40%;
+    top: 70%;
+    z-index: 999;
+}
+
+#headerContactPage .layer .carouselLayerImgLayer div {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    transform: skewX(15deg);
+    width: 100%;
+    color: var(--white);
+}
+
+#headerContactPage .layer .carouselLayerImgLayer div h2 {
+    font-weight: 800;
+    font-size: var(--fontSizeBigger);
+}
+
+#headerContactPage .layer .carouselLayerImgLayer div p {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: lighter;
+}
+
+#contactFormSectionContactPage {
+    /* background: linear-gradient(50deg, #f1f1f1, #fcfcfc); */
+}
+
+#contactFormSectionContactPage .list-group span {
+    color: var(--lightBlue);
+    font-size: 14px;
+}
+
+#contactFormSectionContactPage input,
+#contactFormSectionContactPage textarea {
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid;
+    border-color: var(--lightBlue);
+    outline: none;
+    border-radius: 0;
+    width: 100%;
+}
+
+#contactFormSectionContactPage input::placeholder,
+#contactFormSectionContactPage textarea::placeholder {
+    font-weight: 400;
+    line-height: 26px;
+    color: #3076c5;
+    background-color: transparent;
+    text-transform: capitalize;
+}
+
+#contactFormSectionContactPage input:focus,
+#contactFormSectionContactPage textarea:focus {
+    box-shadow: 0 0px 0px var(--darkBlue);
+    outline: 0 none;
+    background-color: #f0f1f3;
+    border-color: var(--lightBlue);
+    color: var(--darkBlue);
+}
+
+#contactFormSectionContactPage form div button,
+.btnReadMoreService {
+    background: linear-gradient(50deg, var(--darkBlue), var(--lightBlue));
+    color: var(--white);
+}
+
+#contactDetailsContactPage {
+    background: linear-gradient(50deg, #f1f1f1, #fcfcfc);
+    overflow: hidden;
+}
+
+#contactDetailsContactPage .leftOfContact h2 {
+    position: relative;
+}
+
+#contactDetailsContactPage .leftOfContact h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    transform: translate(-1%, -100%);
+    width: 70px;
+    height: 1.5px;
+    background-color: var(--lightBlue);
+    transform: skewX(-10deg);
+    z-index: 23;
+}
+
+#contactDetailsContactPage .leftOfContact ul li i {
+    background-color: var(--lightBlue);
+    color: var(--white);
+}
+
+#contactDetailsContactPage .leftOfContact ul li a {
+    background-color: rgba(69, 90, 100)!important;
+    border-radius: 100px;
+    color: white;
+    text-decoration: unset;
+}
+
+
+/* end contact page */
+
 @media only screen and (max-width: 1000px) {
-    #NavBar {
-        padding: 0% 0% 0% 1%;
-        left: 0;
-        transform: skewX(0);
-        right: 0;
+    #NavBar .containerX::after {
+        width: 0%;
     }
-    #NavBar i {
+    #NavBar .containerX {
+        padding: 0%;
+        transform: skewX(0);
+        width: 90%;
+    }
+    #NavBar .containerX .navbar-brand img {
+        width: 170px;
+    }
+    #NavBar #navbarList .nav-item {
+        transform: skewX(0);
+    }
+    #NavBar .containerX i {
         font-size: 1.1rem;
     }
-    #NavBar .navbar-brand img {
+    #NavBar .containerX #navbarList .nav-item .nav-link {
         transform: skewX(0);
+        padding: 10px 5px !important;
     }
-    #NavBar #navbarList .nav-item .nav-link {
-        transform: skewX(0);
-    }
-    #NavBar #navbarList .nav-item .dropdown-menu .dropdown-item {
-        transform: skewX(0);
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg h1 {
+    #carouselHomePageHeader .carousel-inner .layer .carouselItems h1,
+    #carouselHomePageHeader .carousel-inner .layer .carouselItems i {
         font-size: 1.3rem;
-        top: 60%;
-        left: -32%;
-        transform: translate(30%, -60%);
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg {
-        left: 10%;
-        top: 70%;
-        transform: translate(-2%, -70%);
-    }
-    #carouselHomePageHeader .carousel-item .carouselLayerImg .carousel-btns {
-        font-size: 1.4rem;
-        top: 55%;
-        left: 45%;
-        transform: translate(-25%, -55%);
     }
     #cardsHomePage .row .col-md-4 .card {
         font-size: 0.8rem;
@@ -576,11 +786,11 @@ body {
     #ourPartnersAboutPage .container h2 {
         font-size: 1.9rem;
     }
-    #contactSectionContactPage form div button {
+    #contactFormSectionContactPage form div button {
         font-size: 13px;
     }
-    #contactSectionContactPage input,
-    #contactSectionContactPage textarea {
+    #contactFormSectionContactPage input,
+    #contactFormSectionContactPage textarea {
         padding: 4px;
     }
     #productProductsPage h2 img {
