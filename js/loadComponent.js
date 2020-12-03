@@ -14,8 +14,20 @@ $('#headerProductPage').load('../productsPage/headerProductPage.html')
 $('#headerServicesPage').load('../servicePage/headerServicesPage.html')
 $('#ourServices').load('../servicePage/ourServices.html')
 
-$('#productProductsPage').load('../productsPage/productProductsPage.html'
-    /* ,function(){
-        $('#ourServices').load('../servicePage/ourServices.html')
-    } */
-)
+$('#productProductsPage').load('../productsPage/productProductsPage.html', function() {
+    $('#s7300').load('../productsPage/productsDetails/s7300.html')
+    $('#s7400').load('../productsPage/productsDetails/s7400.html')
+    $('#s71200').load('../productsPage/productsDetails/s71200.html')
+    $('#s71500').load('../productsPage/productsDetails/s71500.html')
+    $('#SIMATIC-HMI').load('../productsPage/productsDetails/SIMATIC-HMI.html')
+    $('#MICROMASTER').load('../productsPage/productsDetails/MICROMASTER.html')
+    $('#SINAMICSDrives').load('../productsPage/productsDetails/SINAMICSDrives.html')
+    $('#Modicon-M100').load('../productsPage/productsDetails/Modicon-M100.html')
+    $('#Modicon-M200').load('../productsPage/productsDetails/Modicon-M200.html')
+    $('#Modicon-M221').load('../productsPage/productsDetails/Modicon-M221.html')
+    $('#Modicon-M340').load('../productsPage/productsDetails/Modicon-M340.html')
+    $('#Modicon-M580').load('../productsPage/productsDetails/Modicon-M580.html')
+    $('#Magelis-HMI').load('../productsPage/productsDetails/Magelis-HMI.html')
+    $('#ATV-drive').load('../productsPage/productsDetails/ATV-drive.html')
+    $('#Soft-Starter').load('../productsPage/productsDetails/Soft-Starter.html')
+})
