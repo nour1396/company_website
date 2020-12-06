@@ -30,4 +30,7 @@ $('#productProductsPage').load('../productsPage/productProductsPage.html', funct
     $('#Magelis-HMI').load('../productsPage/productsDetails/Magelis-HMI.html')
     $('#ATV-drive').load('../productsPage/productsDetails/ATV-drive.html')
     $('#Soft-Starter').load('../productsPage/productsDetails/Soft-Starter.html')
+    $('#Unidrive-M-series').load('../productsPage/productsDetails/Unidrive-M-series.html')
+    $('#commander-c-drive-series').load('../productsPage/productsDetails/commander-c-drive-series.html')
+    $('#MP-series').load('../productsPage/productsDetails/MP-series.html')
 })
