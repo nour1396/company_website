@@ -113,6 +113,16 @@ body {
 /* end navbar */
 
 
+/* start footer */
+
+#Footer {
+    background: var(--darkBlue);
+}
+
+
+/* end footer */
+
+
 /* start carousel in home page */
 
 #carouselHomePageHeader1 {
@@ -243,86 +253,6 @@ body {
 /* end carousel in home page */
 
 
-/* start cards in home page */
-
-#cardsHomePage {
-    background: #254f7c;
-}
-
-#cardsHomePage .row .col-md-4 .card {
-    transform: translateY(-40%);
-    padding: 4%;
-    background: var(--darkBlue);
-    color: var(--white);
-    position: relative;
-    border-radius: 1px;
-    height: 100%;
-    z-index: 99999;
-}
-
-#cardsHomePage .row .col-md-4 p {
-    color: #828288;
-    font-weight: lighter;
-}
-
-#cardsHomePage .row .col-md-4 .card::before {
-    position: absolute;
-    top: 0;
-    width: 100px;
-    height: 2px;
-    left: 10px;
-    background: linear-gradient(90deg, #8951f0, #d71f98);
-    content: "";
-}
-
-
-/* end cards in home page */
-
-
-/* start 2nd carousel about page */
-
-#industries {
-    overflow: hidden;
-}
-
-#industries .right-of-carousel {
-    padding: 0% !important;
-}
-
-#industries .right-of-carousel img {
-    transform: skewX(-4deg);
-}
-
-#industries .carousel-btns {
-    color: var(--lightBlue);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-#industries .left-of-carousel ul li {
-    color: #424242;
-    font-size: 1.2rem;
-}
-
-#industries .left-of-carousel h2 {
-    font-weight: 700;
-    /*     border-bottom: 1px solid darkblue; */
-}
-
-
-/* end 2nd carousel home page */
-
-
-/* start footer */
-
-#Footer {
-    background: var(--darkBlue);
-}
-
-
-/* end footer */
-
-
 /* start header in about page */
 
 #headerAboutPage {
@@ -386,6 +316,56 @@ body {
 
 
 /* end header in about page */
+
+
+/* start robots page */
+
+#headerRobotsPage {
+    background-image: url('../images/robotics system.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 90%;
+    height: 80vh;
+    overflow: hidden;
+}
+
+#headerRobotsPage .layer {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.342);
+}
+
+#headerRobotsPage .layer .carouselLayerImgLayer {
+    transform: skewX(-15deg) translate(-50%, -9%);
+    background: var(--lightBlue);
+    position: relative;
+    height: 100vh;
+    left: -40%;
+    top: 70%;
+    z-index: 999;
+}
+
+#headerRobotsPage .layer .carouselLayerImgLayer div {
+    position: absolute;
+    left: 93%;
+    top: 4%;
+    transform: skewX(15deg);
+    width: 100%;
+    color: var(--white);
+}
+
+#headerRobotsPage .layer .carouselLayerImgLayer div h2 {
+    font-weight: 800;
+    font-size: var(--fontSizeBigger);
+}
+
+#headerRobotsPage .layer .carouselLayerImgLayer div p {
+    font-size: 1.1rem;
+    color: #dbdbdb;
+    font-weight: lighter;
+}
+
+
+/* end robots page */
 
 
 /* start products page */

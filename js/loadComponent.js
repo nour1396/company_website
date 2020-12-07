@@ -34,3 +34,6 @@ $('#productProductsPage').load('../productsPage/productProductsPage.html', funct
     $('#commander-c-drive-series').load('../productsPage/productsDetails/commander-c-drive-series.html')
     $('#MP-series').load('../productsPage/productsDetails/MP-series.html')
 })
+$('#headerRobotsPage').load('../robotsPage/headerRobotsPage.html', function() {
+    $('#contentRobotsPage').load('../robotsPage/contentRobotsPage.html')
+})
