@@ -41,7 +41,7 @@ body {
     left: 0%;
     margin: 0;
     background-color: var(--opicityWhite);
-    width: 80%;
+    width: 85%;
 }
 
 #NavBar .containerX::after {
@@ -49,9 +49,9 @@ body {
     display: block;
     position: absolute;
     top: 0px;
-    right: -11px;
+    right: -12px;
     transform: translateX(25%);
-    width: 11%;
+    width: 10%;
     height: 100%;
     background-color: var(--lightBlue);
     -webkit-transform: skew(-10deg);
